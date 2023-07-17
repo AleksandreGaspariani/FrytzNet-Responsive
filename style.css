@@ -231,12 +231,21 @@ footer  {
     padding: 3%;
 }
 
+.divider {
+    width: 100%;
+    height: 8px;
+    display: none;
+}
+
 @media only screen and (max-width: 600px) {
     #navbar {
         flex-direction: column !important;
     }
+    .divider {
+        display: block !important;
+    }
     #navbar div {
-        margin-top: 2rem !important;
+        padding: 0rem rem !important;
     }
     #navbar div,
     #navbar div ul {
