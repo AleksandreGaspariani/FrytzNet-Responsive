@@ -129,7 +129,7 @@ body{
 }
 
 #trusted_by > #blured_items > * {
-    filter: blur(4px);
+    filter: blur(.7px);
 }
 
 /* About FrytzNet  section*/
