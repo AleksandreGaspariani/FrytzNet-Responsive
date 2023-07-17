@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    list-style-type: none;
+}
+
+a { color: white; text-decoration: none;}
+a:hover { color: white;}
+
+#container {
+    overflow-x: hidden;
+}
+body{
+    background: #161420;
+}
+
+.active {
+    color: #5E64F2;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.c_btn{
+    color: white;
+}
+
+.c_btn:hover{
+    /* color: #1E1E1E; */
+    text-decoration: underline;
+    color: white;
+    /* background-color: white; */
+}
+
+.c_btn_outline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 14px;
+    padding: 4px 19px;
+    border-radius: 15px;
+    background-color: #5E64F2;
+    margin-left: 8px !important;
+    transition: all 1s ease;
+}
+
+.c_btn_outline:hover {
+    background-color: white;
+    color: #5E64F2;
+    font-weight: 600;
+}
+
+.unleash {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+/* Circle section */
+
+#sec_1_bubble {
+    height: inherit;
+    
+}
+
+.circle1 {
+    border-radius: 50%;
+    z-index: 1;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: -70px;
+    bottom: -50px;
+    background: #5E64F2;
+}
+
+.circle2 {
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: -150px;
+    bottom: -140px !important;
+
+    background: rgba(94, 100, 242, 0.24);
+    backdrop-filter: blur(6px);
+}
+
+.circle3 {
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 10px;
+    top: -40px !important;
+
+    background: rgba(94, 100, 242, 0.24);
+    backdrop-filter: blur(6px);
+}
+
+.cheerful {
+    position: absolute;
+    z-index: 3;
+    bottom: -150px;
+    right: -110px;
+}
+
+.cheerful img {
+    height: 380px;
+}
+
+/* Trusted by section */
+
+#trusted_by {
+    background: #201D2C;
+    color: white;
+    padding: 80px 15px;
+    margin: 10% 4%;
+}
+
+#trusted_by > #blured_items > * {
+    filter: blur(4px);
+}
+
+/* About FrytzNet  section*/
+
+#about_frytznet {
+    margin: 10% 4%;
+}
+
+/* Services */
+
+.w30 {
+    width: 30%;
+}
+
+.b50r {
+    border-radius: 50%;
+}
+
+.bi {
+    color: #5E64F2;
+}
+
+/* Pricing section */
+
+.pricing_card {
+    color: white;
+    background: #201D2C;
+    border-radius: 10px;
+    width: 30%;
+    transition: all 0.3s ease-in-out;
+}
+
+.pricing_card > * {
+    margin-bottom: 2rem;
+}
+
+.pricing_card:hover > .pricing_card_indicator,
+.pricing_card:hover > .pricing_card_badge,
+.pricing_card:hover > .pricing_card_button a {
+    background-color: #5E64F2;
+}
+
+.pricing_card:hover > .pricing_card_feature bi{
+    color: white;
+}
+
+.pricing_card_indicator {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+    height: 1rem;
+    background: rgba(155, 155, 155, 0.2);
+}
+
+.pricing_card_badge {
+    border-radius: 5px;
+    background: rgba(155, 155, 155, 0.2);
+    font-size: 10px;
+    line-height: 16px;
+    font-weight: 700;
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 4px 16px;
+    
+}
+
+.pricing_card_price {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pricing_card_button a{
+    border: 2px solid #9B9B9B;
+    border-radius: 15px;
+    padding: 8px 30%;
+}   
+
+.pricing_card_feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.pricing_card_feature i {
+    font-size: 24px;
+    margin-right: 1rem;
+    color: rgba(155, 155, 155, 0.5);
+}
+
+.pricing_card_feature span {
+    color: #9B9B9B;
+}
+
+/* Footer */
+
+footer  {
+    padding: 3%;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar {
+        flex-direction: column !important;
+    }
+    #navbar div {
+        margin-top: 2rem !important;
+    }
+    #navbar div,
+    #navbar div ul {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    #section-1-welcome {
+        flex-direction: column !important;
+    }
+    #section-1-welcome div {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .unleash {
+        font-size: 32px !important;
+        margin-top: 2rem !important;
+    }
+    .c_btn_outline {
+        width: auto !important;
+    }
+
+    #blured_items {
+        margin-top: 1rem !important;
+        flex-direction: column !important;
+    }
+    #sec_1_bubble {
+        display: none !important;
+    }
+
+    /*  */
+
+    #about_frytznet {
+        flex-direction: column !important;
+    }
+    #about_frytznet > div {
+        width: 100% !important;
+    }
+    #about_frytznet > div:first-child >  img {
+        width: 300px !important;
+    }
+    #about_frytznet > div:last-child > small:first-child {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    /*  */
+
+    .w30 {
+        width: 45% !important;
+    }
+
+    .pricing_card {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 1rem;
+    }
+    #Pricing > div:first-child {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    footer {
+        flex-direction: column !important;
+    }
+    footer > div:first-child {
+        justify-content: center !important;
+        align-items: center !important;
+        width: 100% !important;
+        margin-bottom: 1.5rem;
+    }
+    footer > div:last-child{
+        width: 100% !important;
+        align-items: start !important;
+        flex-wrap: wrap;
+        justify-content: flex-start !important;
+    }
+  }
