@@ -316,6 +316,8 @@ footer  {
 
     footer {
         flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
     }
     footer > div:first-child {
         justify-content: center !important;
@@ -323,10 +325,20 @@ footer  {
         width: 100% !important;
         margin-bottom: 1.5rem;
     }
+    footer > div {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    
     footer > div:last-child{
         width: 100% !important;
         align-items: start !important;
         flex-wrap: wrap;
-        justify-content: flex-start !important;
+        justify-content: center !important;
     }
+    footer > div > div:last-child {
+        justify-content: center !important;
+        align-items: start !important;
+    }
+
   }
