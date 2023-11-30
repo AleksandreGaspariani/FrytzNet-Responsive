@@ -18,8 +18,60 @@ body{
     background: #161420;
 }
 
+#auth > a:last-child {
+    text-decoration: none;
+}
+
+.home-button > p {
+    transition: color .3s ease;
+}
+
+.domain_input {
+    background-color: #201D2C;
+    border-right: 0px;
+    border-bottom: 2px solid #5E64F2;
+    padding: 4px 12px;
+    outline: none;
+    color: #5E64F2;
+    text-align: start;
+}
+
+.our-services > .w30 {
+    min-height: 25vh;
+    border-radius: 5px;
+    transition: border .3s ease-in-out;
+
+    &:hover {
+        border-left: 3px solid #5E64F2;
+    }
+}   
+
+.pricing_card {
+    transition: .3s ease;
+}
+
+.home-button > p:hover {
+    cursor: pointer;
+    color: #5E64F2;
+}
+
 .active {
     color: #5E64F2;
+    border-bottom: 3px solid #5E64F2;
+}
+
+.c_nav {
+    transition: color .4s ease;
+    transition: border-width .1s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 0px solid #5E64F2;
+}
+
+.c_nav:hover {
+    color: #5E64F2; 
+    border-bottom: 3px solid #5E64F2;
 }
 
 .upper {
@@ -48,6 +100,7 @@ body{
     background-color: #5E64F2;
     margin-left: 8px !important;
     transition: all 1s ease;
+    
 }
 
 .c_btn_outline:hover {
@@ -111,8 +164,8 @@ body{
 .cheerful {
     position: absolute;
     z-index: 3;
-    bottom: -150px;
-    right: -110px;
+    bottom: -136px;
+    right: 50px;
 }
 
 .cheerful img {
